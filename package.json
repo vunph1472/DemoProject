@@ -8,6 +8,7 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
+    "android:codegen": "cd android && ./gradlew generateCodegenArtifactsFromSchema && cd ..",
     "android:newarch:release": "react-native run-android --mode newarchRelease --appIdSuffix 'newarch'",
     "android:oldarch:release": "react-native run-android --mode oldarchRelease --appIdSuffix 'oldarch'",
     "android:newarch:debug": "react-native run-android --mode newarchDebug --appIdSuffix 'newarch'",
@@ -40,11 +41,11 @@
     "typescript": "^5.8.3"
   },
   "codegenConfig": {
-    "name": "DemoProjectDeviceInfoSpec",
+    "name": "NativeLoggerSpec",
     "type": "modules",
     "jsSrcsDir": "specs",
     "android": {
-      "javaPackageName": "com.demoprojectdeviceinfo"
+      "javaPackageName": "com.nativelogger"
     }
   },
   "engines": {
